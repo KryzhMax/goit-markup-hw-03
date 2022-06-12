@@ -19,10 +19,7 @@ body {
 }
 
 /* Утилиты */
-.list, 
-.section-list,
-.service-list,
-.teamlist,
+ul,
 h1,
 h2,
 h3,
@@ -32,11 +29,6 @@ h6,
 p{
     margin: 0;
     padding: 0;
-}
-
-.list,
-.section-list,
-.teamlist {
     list-style: none;
 }
 
@@ -46,14 +38,11 @@ p{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
-/* Расстояние между блоками */
-.filter,
-.section-title {
+.section {
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
 }
 
 .logo,
@@ -62,6 +51,7 @@ p{
 .contact-info {
     text-decoration: none;
 }
+
 /* Page header */
 
 .page-header{
@@ -75,8 +65,6 @@ p{
 /* Logo */
 
 .logo {
-    display: flex;
-
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -121,8 +109,6 @@ p{
     padding: 0;
 }
 
-
-
 .site-nav .link{
     display: block;
     padding-top: 32px;
@@ -138,7 +124,6 @@ p{
 .site-nav .current{
     color: var(--accent-color);
 }
-
 
 .contacts .info{
     display: block;
@@ -239,19 +224,13 @@ p{
     justify-content: center;
 }
 
-
 .passage{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
-
 /* Чем мы занимаемся */
-
-.section{
-    padding-bottom: 94px;
-}
 
 .section-title{
     font-weight: 700;
@@ -259,6 +238,7 @@ p{
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-bottom: 50px;
 
     color: var(--title-color);
 }
@@ -327,7 +307,6 @@ p{
 .footer{
     background-color: #2F303A;
     padding: 60px 0;
-    justify-content: flex-start;
 }
 
 .address{
@@ -354,6 +333,7 @@ p{
 .container .filter{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .filter .filter-point:not(:last-child){
@@ -380,11 +360,6 @@ p{
 .filter .current{
     background-color: var(--accent-color);
     color: var(--main-white);
-}
-
-.service-list{
-    display: flex;
-    padding-bottom: 94px;
 }
 
 .service-list .list{
