@@ -33,18 +33,28 @@ body {
 }
 
 .container{
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     
 }
-/* Расстояние между блоками Портфолио */
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+    margin: 0;
+    padding: 0;
+}
+/* Расстояние между блоками */
 .filter,
-.features,
 .section-title {
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 .logo,
@@ -105,7 +115,6 @@ body {
 
 .site-nav .item:first-child{
     margin-left: 93px;
-    /* margin: 0; */
 }
 
 .site-nav{
@@ -158,7 +167,7 @@ body {
 .hero{
     background-color: #2F303A;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 94px;
 }
 
 .hero-title{
@@ -183,13 +192,15 @@ body {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    cursor: pointer;
     min-width: 200px;
-    padding: 10px 32px;
-
+    cursor: pointer;
+    
+    text-align: center;
+    align-items: center;
     color: var(--main-white);
     background-color: var(--accent-color);
 
+    padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -204,7 +215,6 @@ body {
 .features{
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .features .title{
@@ -222,11 +232,13 @@ body {
 
 .features > .item{
     width: 270px;
-    margin: 15px;
+}
+.item:not(:last-child){
+    margin-right: 30px;
 }
 
-.features .list{
-    margin: -15px;
+.features > .list{
+    justify-content: center;
 }
 
 
@@ -241,6 +253,10 @@ body {
 
 /* What are we doing */
 
+.section{
+    padding-bottom: 94px;
+}
+
 .section-title{
     font-weight: 700;
     font-size: 36px;
@@ -248,14 +264,18 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
 
-    margin-bottom: 50px;
-    padding-top: 94px;
+    /* margin-bottom: 50px;
+    padding-top: 94px; */
     color: var(--title-color);
 }
 
 .section-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.section-list .item:not(:last-child){
+    margin-right: 30px;
 }
 
 /* Our team */
@@ -271,11 +291,6 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-}
-
-.team{
-    padding-bottom: 94px;
-    flex-basis: calc ((100% - 90px) / 4);
 }
 
 .teammates{
@@ -317,7 +332,7 @@ body {
 
 .footer{
     background-color: #2F303A;
-    padding-top: 60px;
+    padding: 60px 0;
     justify-content: flex-start;
 }
 
@@ -349,10 +364,6 @@ body {
     justify-content: center;
 }
 
-.filter-point{
-    margin-bottom: 50px;
-}
-
 .filter .filter-point:not(:last-child){
     margin-right: 8px;
 }
@@ -381,20 +392,20 @@ body {
 
 .service-list{
     display: flex;
+    padding-bottom: 94px;
 }
 
 .service-list .list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: calc ((100% - 60px) / 3);
-    padding-bottom: 94px;
+    /* width: calc ((100% - 60px) / 3); */
 }
 
 .service-list .service-item{
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
     width: 370px;
 }
 
