@@ -21,7 +21,15 @@ body {
 /* Утилиты */
 .list, 
 .section-list,
-.service-list{
+.service-list,
+.teamlist,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
     margin: 0;
     padding: 0;
 }
@@ -41,15 +49,6 @@ body {
     
 }
 
-h1,
-h2, 
-h3, 
-h4, 
-h5, 
-h6{
-    margin: 0;
-    padding: 0;
-}
 /* Расстояние между блоками */
 .filter,
 .section-title {
@@ -171,7 +170,6 @@ h6{
 }
 
 .hero-title{
-
     min-width: 696px;
 
     font-weight: 900;
@@ -246,12 +244,10 @@ h6{
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin: 0;
-    padding: 0;
 }
 
 
-/* What are we doing */
+/* Чем мы занимаемся */
 
 .section{
     padding-bottom: 94px;
@@ -264,8 +260,6 @@ h6{
     letter-spacing: 0.03em;
     text-align: center;
 
-    /* margin-bottom: 50px;
-    padding-top: 94px; */
     color: var(--title-color);
 }
 
@@ -289,8 +283,6 @@ h6{
 .teamlist{
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 .teammates{
@@ -325,7 +317,9 @@ h6{
     text-align: center;
     letter-spacing: 0.03em;
     width: 270px;
-    margin: 0;
+
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 /* Footer */
@@ -356,8 +350,6 @@ h6{
 }
 
 /* Portfolio */
-
-/* Flex container */
 
 .container .filter{
     display: flex;
@@ -429,6 +421,9 @@ h6{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+
+    padding-top: 4px;
+    padding-bottom: 20px;
 
     color: var(--main-color)
 }
