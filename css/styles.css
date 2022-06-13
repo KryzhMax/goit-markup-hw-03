@@ -195,6 +195,20 @@ img{
 
 /* Features */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .features{
     display: flex;
     flex-wrap: wrap;
@@ -336,6 +350,7 @@ img{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    
 }
 
 .filter .filter-point:not(:last-child){
@@ -364,24 +379,24 @@ img{
     color: var(--main-white);
 }
 
-.service-list .list{
+ .list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     /* width: calc ((100% - 60px) / 3); */
 }
 
-.service-list .service-item{
+.service-item{
     margin-right: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #EEEEEE;
     width: 370px;
 }
 
-.service-list .service-item:nth-child(3n){
+.service-item:nth-child(3n){
     margin-right: 0;
 }
-.service-list .service-item:nth-last-child(-n + 3){
+.service-item:nth-last-child(-n + 3){
     margin-bottom: 0;
 }
 
@@ -390,6 +405,7 @@ img{
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 
     color: var(--title-color);
 }
@@ -413,5 +429,4 @@ img{
     border: 1px solid #EEEEEE;
     border-top: none;
     padding: 20px 24px;
-    min-width: 320px;
 }
