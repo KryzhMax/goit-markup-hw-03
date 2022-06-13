@@ -282,6 +282,11 @@ img{
     margin-right: 0;
 }
 
+.teampad{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 .team-member{
     font-weight: 500;
     font-size: 16px;
@@ -289,9 +294,6 @@ img{
     text-align: center;
     width: 270px;
     letter-spacing: 0.03em;
-
-    margin-top: 30px;
-    margin-bottom: 10px;
 
     color: var(--title-color);
 }
@@ -325,10 +327,11 @@ img{
     color: var(--main-white);
 }
 .contact-info{
+    display: block;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin: 9px auto;
+    margin-top: 9px;
 
     color: var(--footer-contacts);
 }
