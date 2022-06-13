@@ -104,13 +104,10 @@ img{
     margin-right: 50px;
 }
 
-.site-nav .item:first-child{
-    margin-left: 93px;
-}
-
 .site-nav{
     display: flex;
     padding: 0;
+    margin-left: 93px;
 }
 
 .site-nav .link{
@@ -155,21 +152,19 @@ img{
 .hero{
     background-color: #2F303A;
     text-align: center;
-    margin-bottom: 94px;
     padding: 200px 0;
 }
 
 .hero-title{
-    min-width: 696px;
+    max-width: 696px;
 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;    
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    margin-top: 0;
-    margin-bottom: 30px;
+    
+    margin: 0 auto 30px;
 
     color: var(--main-white);
 }
@@ -203,6 +198,7 @@ img{
 .features{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 94px;
 }
 
 .features .title{
@@ -243,7 +239,7 @@ img{
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     color: var(--title-color);
 }
@@ -283,8 +279,8 @@ img{
 }
 
 .teampad{
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-member{
@@ -303,10 +299,8 @@ img{
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    width: 270px;
 
-    padding-top: 10px;
-    padding-bottom: 30px;
+    margin-top: 10px;
 }
 
 /* Footer */
@@ -341,7 +335,7 @@ img{
 .container .filter{
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .filter .filter-point:not(:last-child){
