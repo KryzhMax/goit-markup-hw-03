@@ -32,6 +32,10 @@ p{
     list-style: none;
 }
 
+img{
+    display: block;
+}
+
 .container{
     width: 1200px;
     padding-left: 15px;
@@ -408,9 +412,6 @@ p{
     color: var(--accent-color);
 }
 
-.card-img{
-    display: block;
-}
 .cardbox{
     border: 1px solid #EEEEEE;
     border-top: none;
